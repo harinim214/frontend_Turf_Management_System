@@ -1,0 +1,173 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* LANDING WRAPPER */
+.landing {
+  background: #0f172a;
+  color: white;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/turf_background.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* Content Card */
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  padding: 60px;
+  text-align: center;
+  border-radius: 15px;
+  max-width: 800px;
+}
+
+/* Logo Text */
+.hero-logo {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: #22c55e;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #22c55e;
+}
+
+/* Description */
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+  color: #d1d5db;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #22c55e;
+  padding: 12px 30px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 15px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 2px solid #22c55e;
+  padding: 12px 30px;
+  border-radius: 8px;
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #22c55e;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  background: #334155;
+}
+
+/* ================= CTA SECTION ================= */
+
+.cta {
+  background: #0f172a;  /* match main background */
+  padding: 80px 20px;
+  text-align: center;
+  margin-bottom: 0;     /* 🔥 important */
+}
+
+.cta h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.cta p {
+  margin-bottom: 25px;
+  color: #9ca3af;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}

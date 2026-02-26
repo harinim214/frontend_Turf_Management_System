@@ -1,0 +1,195 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: #111;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar h2 {
+  color: #00ffae;
+  font-size: 24px;
+}
+
+.navbar a {
+  margin-left: 25px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #00ffae;
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+.btn {
+  background: #00ffae;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #00c98d;
+  transform: translateY(-2px);
+}
+
+/* ============================= */
+/* GRID LAYOUT */
+/* ============================= */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 50px;
+  justify-content: center;
+}
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+.card {
+  background: #1c1c1c;
+  width: 280px;
+  border-radius: 10px;
+  padding: 15px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 12px 0 6px;
+}
+
+.card p {
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.form-container {
+  width: 350px;
+  margin: 80px auto;
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* ============================= */
+/* DASHBOARD */
+/* ============================= */
+
+.dashboard {
+  padding: 50px;
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+}
+
+.dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dashboard th {
+  background: #00ffae;
+  color: black;
+  padding: 12px;
+  text-align: left;
+}
+
+.dashboard td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+}
+
+.dashboard tr:hover {
+  background: #222;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .grid {
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+}

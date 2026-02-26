@@ -1,0 +1,87 @@
+/* Slot Grid */
+.slot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+/* Individual Time Slot */
+.time-slot {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.time-slot:hover {
+  background: #e6f2ff;
+  border-color: #3399ff;
+}
+
+/* Active selected slot */
+.time-slot.active {
+  background: #3399ff;
+  color: #fff;
+  border-color: #3399ff;
+}
+
+/* Confirm Booking Button */
+.btn {
+  background: #00e6a8;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+/* Button hover */
+.btn:hover {
+  background: #00cc95;
+}
+.disabled-slot {
+  background: #444;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  color: white;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

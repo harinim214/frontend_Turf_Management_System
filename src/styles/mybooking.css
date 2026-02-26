@@ -1,0 +1,81 @@
+/* ================= PAGE ================= */
+
+.my-bookings {
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 70vh;
+  color: white;
+}
+
+/* Title */
+.my-bookings h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #22c55e;
+}
+
+/* ================= TABLE WRAPPER ================= */
+
+.bookings-table-wrapper {
+  background: #111827;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= TABLE ================= */
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+/* Header */
+.bookings-table thead {
+  background: #22c55e;
+}
+
+.bookings-table th {
+  padding: 18px;
+  text-align: left;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Body */
+.bookings-table td {
+  padding: 18px;
+  border-bottom: 1px solid #1f2937;
+}
+
+/* Hover Effect */
+.bookings-table tbody tr {
+  transition: 0.3s ease;
+}
+
+.bookings-table tbody tr:hover {
+  background: #1f2937;
+}
+
+/* No bookings */
+.no-bookings {
+  background: #111827;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .my-bookings {
+    padding: 40px 20px;
+  }
+
+  .bookings-table th,
+  .bookings-table td {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
